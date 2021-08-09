@@ -1,7 +1,32 @@
-.App {
-  text-align: center;
+.app-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'h h'
+  'n c';
 }
-li{
-  font-size: 24px;
-  color:rgb(22, 9, 146);
+.header{
+  grid-area: h;
+  background: rgb(122, 3, 133);
+}
+.header img{
+  width: 50px;
+  height: 50px;
+}
+.nav{
+  grid-area: n;
+  background: rgb(70, 8, 184);
+  color: #fff;
+}
+.content{
+  grid-area: c;
+  background: rgba(5, 5, 5, .25);
+}
+.content img{
+  width: 100%;
+  height: auto;
 }
